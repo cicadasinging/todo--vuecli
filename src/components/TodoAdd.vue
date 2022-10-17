@@ -25,7 +25,7 @@ const emitAddTodo = () => {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 /* 添加框 */
 .input-add {
   position: relative;

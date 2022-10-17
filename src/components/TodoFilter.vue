@@ -22,7 +22,7 @@ const emit = defineEmits(["change-filter"]);
 const emitChangeFilter = (value) => emit("change-filter", value);
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .filters {
   display: flex;
   margin: 24px 2px;

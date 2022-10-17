@@ -14,7 +14,7 @@ const emit = defineEmits(["change-state"]);
 const emitChangeState = (event) => emit("change-state", event);
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .todo-item {
   background: white;
   padding: 16px;
