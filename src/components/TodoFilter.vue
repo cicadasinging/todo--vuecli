@@ -22,22 +22,22 @@ const emit = defineEmits(["change-filter"]);
 const emitChangeFilter = (value) => emit("change-filter", value);
 </script>
 
-<style>
+<style lang="scss">
 .filters {
   display: flex;
   margin: 24px 2px;
   color: #c0c2ce;
   font-size: 14px;
-}
 
-.filters .filter {
-  margin-right: 14px;
-  transition: 0.8s;
-  cursor: pointer;
-}
+  .filter {
+    margin-right: 14px;
+    transition: 0.8s;
+    cursor: pointer;
 
-.filters .filter.active {
-  color: #6b729c;
-  transform: scale(1.2);
+    &.active {
+      color: #6b729c;
+      transform: scale(1.2);
+    }
+  }
 }
 </style>

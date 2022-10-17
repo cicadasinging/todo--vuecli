@@ -15,7 +15,7 @@ import TodoListItem from "./TodoListItem";
 defineProps({ todos: Array });
 </script>
 
-<style>
+<style lang="scss">
 .todo-list {
   display: grid;
   row-gap: 14px;
