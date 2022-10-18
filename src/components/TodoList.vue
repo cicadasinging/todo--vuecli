@@ -10,7 +10,7 @@
 </template>
 
 <script setup>
-import TodoListItem from "./TodoListItem";
+import TodoListItem from "./TodoListItem.vue";
 
 defineProps({ todos: Array });
 </script>
