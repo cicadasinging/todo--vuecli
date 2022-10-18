@@ -1,6 +1,7 @@
 <template>
   <main>
     <div class="container">
+      <img alt="Vue logo" class="logo" src="./assets/logo.png" />
       <h1>欢迎使用 Todo 待办事项！</h1>
       <todo-add :tid="todos.length" @add-todo="addTodo" />
       <todo-filter :selected="filter" @change-filter="changeFilter" />
@@ -10,11 +11,11 @@
 </template>
 
 <script setup>
+import useFilteredTodos from "@/composables/useFilteredTodos.js";
+import useTodos from "@/composables/useTodos.js";
 import TodoAdd from "./components/TodoAdd.vue";
 import TodoFilter from "./components/TodoFilter.vue";
 import TodoList from "./components/TodoList.vue";
-import useTodos from "@/composables/useTodos.js";
-import useFilteredTodos from "@/composables/useFilteredTodos.js";
 
 const { todos, addTodo } = useTodos();
 const { filter, filteredTodos } = useFilteredTodos(todos);
@@ -46,11 +47,17 @@ main {
     max-width: 400px;
     box-shadow: 0 0 24px rgba(0, 0, 0, 0.15);
     border-radius: 24px;
-    padding: 48px 28px;
+    padding: 38px 28px;
     background-color: rgb(245, 246, 252);
-    /* 标题 */
+
+    .logo {
+      width: 60px;
+      display: block;
+      margin: 0 auto;
+    }
+
     h1 {
-      margin: 24px 0;
+      margin: 12px 0 24px 0;
       font-size: 28px;
       color: #414873;
     }
