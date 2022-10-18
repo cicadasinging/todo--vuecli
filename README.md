@@ -1,4 +1,4 @@
-# todo--vue3-vuecli
+# todo--vuecli
 
 ## Project setup
 
