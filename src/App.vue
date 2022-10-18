@@ -2,7 +2,7 @@
   <main>
     <div class="container">
       <img alt="Vue logo" class="logo" src="./assets/logo.png" />
-      <h1>欢迎使用 Todo 待办事项！</h1>
+      <h1>欢迎使用 Todo App！</h1>
       <todo-add :tid="todos.length" @add-todo="addTodo" />
       <todo-filter :selected="filter" @change-filter="changeFilter" />
       <todo-list :todos="filteredTodos" />
@@ -26,6 +26,8 @@ const changeFilter = (value) => {
 
 <style lang="scss">
 * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -52,6 +54,7 @@ main {
 
     .logo {
       width: 60px;
+      height: 60px;
       display: block;
       margin: 0 auto;
     }
