@@ -1,20 +1,17 @@
+import { getTodos, postTodo } from "@/apis/request";
 import { onMounted, ref } from "vue";
-import { fetchTodos } from "@/apis/request";
 
 export default () => {
   const todos = ref([]);
 
   // 添加 todo
-  const addTodo = (todo) => todos.value.push(todo);
+  const addTodo = (todo) => {
+    todos.value.push(todo);
+    postTodo(todo);
+  };
 
   onMounted(() => {
-    fetchTodos().then((rawTodos) => {
-      todos.value = rawTodos.map((todo) => ({
-        id: todo.id,
-        content: todo.title,
-        completed: todo.completed,
-      }));
-    });
+    getTodos().then((r) => (todos.value = r));
   });
 
   return { todos, addTodo };
