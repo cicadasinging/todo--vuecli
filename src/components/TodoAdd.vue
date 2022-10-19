@@ -36,7 +36,7 @@ const emitAddTodo = () => {
     width: 100%;
     border-radius: 9999px;
     border-style: none;
-    outline-style: hidden;
+    outline-style: none;
     padding: 1rem 3rem 1rem 1rem;
     font-size: 1rem;
     line-height: 1.5rem;
@@ -53,6 +53,7 @@ const emitAddTodo = () => {
     height: 3.5rem;
     border-radius: 9999px;
     border-style: none;
+    outline-style: none;
     background: linear-gradient(rgb(216 180 254), rgb(147 197 253));
     cursor: pointer;
 

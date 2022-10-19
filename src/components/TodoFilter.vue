@@ -25,18 +25,20 @@ const emitChangeFilter = (value) => emit("change-filter", value);
 <style lang="scss" scoped>
 .filters {
   display: flex;
-  margin: 24px 2px;
-  color: #c0c2ce;
-  font-size: 14px;
+  margin: 1.5rem 0.125rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: rgb(148 163 184);
 
   .filter {
-    margin-right: 14px;
-    transition: 0.8s;
+    margin-right: 0.875rem;
+    transition-duration: 500ms;
     cursor: pointer;
 
     &.active {
-      color: #6b729c;
-      transform: scale(1.2);
+      transform: scale(1.25);
+      color: rgb(139 92 246);
+      font-weight: 500;
     }
   }
 }
