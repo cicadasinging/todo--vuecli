@@ -29,8 +29,8 @@ const emitAddTodo = () => {
 /* 添加框 */
 .input-add {
   position: relative;
-  display: grid;
-  place-items: end;
+  display: flex;
+  place-items: center;
 
   input {
     width: 100%;
@@ -49,6 +49,7 @@ const emitAddTodo = () => {
 
   button {
     position: absolute;
+    right: 0;
     width: 3.5rem;
     height: 3.5rem;
     border-radius: 9999px;

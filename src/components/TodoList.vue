@@ -18,6 +18,6 @@ defineProps({ todos: Array });
 <style lang="scss" scoped>
 .todo-list {
   display: grid;
-  row-gap: 0.875rem;
+  gap: 0.875rem;
 }
 </style>

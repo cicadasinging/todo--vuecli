@@ -41,7 +41,7 @@ main {
   background-color: rgb(224 231 255);
   padding: 7rem 0;
   display: grid;
-  place-items: center;
+  justify-items: center;
 
   .container {
     width: 640px;
