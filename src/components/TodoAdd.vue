@@ -29,41 +29,43 @@ const emitAddTodo = () => {
 /* 添加框 */
 .input-add {
   position: relative;
-  display: flex;
-  align-items: center;
+  display: grid;
+  place-items: end;
 
   input {
-    padding: 16px 52px 16px 18px;
-    border-radius: 48px;
-    border: none;
-    outline: none;
-    box-shadow: 0 0 24px rgba(0, 0, 0, 0.08);
     width: 100%;
-    font-size: 16px;
-    color: #626262;
+    border-radius: 9999px;
+    border-style: none;
+    outline-style: hidden;
+    padding: 1rem 3rem 1rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: rgb(71 85 105);
+
+    &:hover {
+      box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    }
   }
 
   button {
-    width: 46px;
-    height: 46px;
-    border-radius: 50%;
-    background: linear-gradient(#c0a5f3, #7f95f7);
-    border: none;
-    color: white;
     position: absolute;
-    right: 0;
-
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 9999px;
+    border-style: none;
+    background: linear-gradient(rgb(216 180 254), rgb(147 197 253));
     cursor: pointer;
-    outline: none;
+
+    &:hover {
+      filter: brightness(1.05);
+    }
 
     .plus {
       display: block;
       width: 100%;
       height: 100%;
-      background: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff);
-      background-size: 50% 2px, 2px 50%;
-      background-position: center;
-      background-repeat: no-repeat;
+      background: linear-gradient(#fff, #fff) no-repeat center, linear-gradient(#fff, #fff) no-repeat center;
+      background-size: 50% 0.25rem, 0.25rem 50%;
     }
   }
 }

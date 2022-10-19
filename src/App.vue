@@ -36,18 +36,17 @@ const changeFilter = (value) => {
 
 /* 整个页面 */
 main {
-  min-height: 100vh;
   width: 100vw;
+  min-height: 100vh;
   background-color: rgb(224 231 255);
   padding: 7rem 0;
   display: grid;
-  align-items: start;
-  justify-items: center;
+  place-items: center;
 
   .container {
     width: 640px;
     border-radius: 1.5rem;
-    background-color: rgb(248, 250, 252);
+    background-color: rgb(241 245 249);
     padding: 2.25rem 1.75rem;
     box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
 
